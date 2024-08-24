@@ -1,0 +1,184 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPTi5nuxIXmVmPG8jxp1x21",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/UmAir227/TwinkleTwinkleLyrics/blob/main/Twinkle%20twinkle%20Lyrics\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "id": "dDdZ9uUR7AGI"
+      },
+      "outputs": [],
+      "source": [
+        "#repeating phrase as a variable\n",
+        "repeating_phrase = \"Twinkle Twinkle, Little Star\\nHow I wonder what you are.\\n\""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#escape sequence correctly for a line break\n",
+        "divider = \"*-*-*-*-*-*-*-*-*-*\\n\""
+      ],
+      "metadata": {
+        "id": "fdjWupp_7FHW"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#multi-line string correctly for the middle stanza\n",
+        "middle_stanza = \"\"\"Up above the world so high-\n",
+        "Like a diamond in the sky.\"\"\""
+      ],
+      "metadata": {
+        "id": "Y4s9_pP47Sx5"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(repeating_phrase)  # First stanza\n",
+        "print(divider)           # Divider\n",
+        "print(middle_stanza)     # Middle stanza\n",
+        "print(divider)           # Divider\n",
+        "print(repeating_phrase)  # Repeat the first stanza"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ckSUAVCM7TmJ",
+        "outputId": "0bef4fa6-9047-460f-d02d-2066c3eab1c9"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Twinkle Twinkle, Little Star\n",
+            "How I wonder what you are.\n",
+            "\n",
+            "*-*-*-*-*-*-*-*-*-*\n",
+            "\n",
+            "Up above the world so high-\n",
+            "Like a diamond in the sky.\n",
+            "*-*-*-*-*-*-*-*-*-*\n",
+            "\n",
+            "Twinkle Twinkle, Little Star\n",
+            "How I wonder what you are.\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Try again With New Way"
+      ],
+      "metadata": {
+        "id": "MxBAtyC3HNI0"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "repeating_phrase = \"Twinkle Twinkle, Little Star\\nHow I wonder what you are.\\n\""
+      ],
+      "metadata": {
+        "id": "I89z8z617XNu"
+      },
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Use a multi-line string to store the full lyrics\n",
+        "full_lyrics = f\"{repeating_phrase}\\n**-**-**-**-**-**-**-**-**\\n\" \\\n",
+        "              \"Up above the world so high-\\nLike a diamond in the sky.\\n\" \\\n",
+        "              \"**-**-**-**-**-**-**-**-**\\n\" \\\n",
+        "              f\"{repeating_phrase}\"\n",
+        ""
+      ],
+      "metadata": {
+        "id": "iJAfrfwg_wE_"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(full_lyrics)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6QkFQaF5_03e",
+        "outputId": "4fc785d5-61c7-488d-cc6d-4115afd700aa"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Twinkle Twinkle, Little Star\n",
+            "How I wonder what you are.\n",
+            "\n",
+            "**-**-**-**-**-**-**-**-**\n",
+            "Up above the world so high-\n",
+            "Like a diamond in the sky.\n",
+            "**-**-**-**-**-**-**-**-**\n",
+            "Twinkle Twinkle, Little Star\n",
+            "How I wonder what you are.\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "1BepV__H_41W"
+      },
+      "execution_count": 17,
+      "outputs": []
+    }
+  ]
+}
